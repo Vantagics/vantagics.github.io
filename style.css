@@ -269,23 +269,7 @@ th {
     border-left-color: var(--primary-color);
 }
 
-/* Tech Stack - Clean Tags */
-#tech-stack .tech-stack-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: flex-start; /* Align left */
-}
 
-#tech-stack .tech-stack-item {
-    background: var(--section-bg-color);
-    color: var(--secondary-color);
-    padding: 0.6rem 1.2rem;
-    border: 1px solid var(--border-color);
-    border-radius: 2px;
-    font-weight: 500;
-    font-size: 0.9rem;
-}
 
 /* Quick Start - Minimal Steps */
 #quick-start ol {
