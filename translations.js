@@ -11,6 +11,7 @@ const translations = {
         "hero_cta": "Get Started",
 
         "features_title": "Core Features",
+        "features_subtitle": "Powerful AI-driven capabilities to transform your data workflow",
 
         "feature_1_title": "Intelligent AI Data Assistant",
         "feature_1_desc": "Natural language queries with multi-turn conversation support. AI understands your intent and provides precise analysis recommendations.",
@@ -31,6 +32,7 @@ const translations = {
         "feature_6_desc": "Built-in professional analysis skills ready to use. Supports Anthropic Skills and MCP protocol.",
 
         "advantage_title": "Product Advantages",
+        "advantage_subtitle": "Built for modern teams who demand excellence",
 
         "advantage_1_title": "Zero-Code Analysis",
         "advantage_1_desc": "No technical background required. Business users can perform deep data analysis without writing code.",
@@ -68,6 +70,8 @@ const translations = {
         "tech_compliance": "<strong>Privacy Compliant:</strong> Meets regulatory requirements",
 
         "use_cases_title": "Use Cases",
+        "use_cases_subtitle": "Versatile solutions for every industry",
+
         "use_case_ecommerce_title": "🛒 E-commerce Operations",
         "use_case_ecommerce_desc": "Sales analysis, user behavior tracking, marketing effectiveness evaluation",
         "use_case_product_title": "📱 Product Analysis",
@@ -102,6 +106,8 @@ const translations = {
         "quick_4": "Get automatically generated analysis results and visual charts.",
 
         "comparison_title": "Differentiated Advantages Over Similar Products",
+        "comparison_subtitle": "See how we stack up against traditional tools",
+
         "comparison_1_title": "vs. Traditional BI Tools",
         "comparison_1_dim": "Dimension",
         "comparison_1_trad": "Traditional BI Tools",
@@ -179,6 +185,7 @@ const translations = {
         "hero_cta": "立即开始",
 
         "features_title": "核心功能",
+        "features_subtitle": "强大的 AI 驱动能力，转变您的数据工作流程",
 
         "feature_1_title": "智能 AI 数据分析助手",
         "feature_1_desc": "通过对话方式提问，支持多轮连续追问。AI 自动识别分析意图，提供精准建议。",
@@ -199,6 +206,7 @@ const translations = {
         "feature_6_desc": "内置专业分析技能，即装即用。支持 Anthropic Skills 和 MCP 协议。",
 
         "advantage_title": "产品优势",
+        "advantage_subtitle": "为追求卓越的现代团队打造",
 
         "advantage_1_title": "零代码分析",
         "advantage_1_desc": "无需技术背景，业务人员也能深度分析数据，无需编写代码。",
@@ -236,6 +244,8 @@ const translations = {
         "tech_compliance": "<strong>隐私合规：</strong>满足监管要求",
 
         "use_cases_title": "应用场景",
+        "use_cases_subtitle": "适用于各行各业的多功能解决方案",
+
         "use_case_ecommerce_title": "🛒 电商运营",
         "use_case_ecommerce_desc": "销售数据分析、用户行为追踪、营销效果评估",
         "use_case_product_title": "📱 产品分析",
@@ -270,6 +280,8 @@ const translations = {
         "quick_4": "获取自动生成的分析结果和可视化图表。",
 
         "comparison_title": "与同类产品的差异化优势",
+        "comparison_subtitle": "看看我们与传统工具的对比",
+
         "comparison_1_title": "与传统 BI 工具对比",
         "comparison_1_dim": "对比维度",
         "comparison_1_trad": "传统 BI 工具",
