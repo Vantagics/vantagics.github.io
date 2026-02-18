@@ -135,10 +135,11 @@ nav a:hover {
 /* Hero */
 .hero {
     text-align: center;
-    padding: 6rem 2rem 5rem;
+    padding: 5rem 2rem 6rem;
     background:
-        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(79, 70, 229, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.05) 0%, transparent 50%),
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(79, 70, 229, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse 50% 30% at 20% 80%, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
         linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
     position: relative;
     overflow: hidden;
@@ -152,19 +153,74 @@ nav a:hover {
     right: 0;
     bottom: 0;
     background-image:
-        radial-gradient(circle at 20% 30%, rgba(79, 70, 229, 0.03) 1px, transparent 1px),
-        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+        radial-gradient(circle at 20% 30%, rgba(79, 70, 229, 0.04) 1px, transparent 1px),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.04) 1px, transparent 1px);
     background-size: 60px 60px;
     pointer-events: none;
+}
+
+.hero-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: var(--primary);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: particleFloat 15s infinite ease-in-out;
+}
+
+.particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; }
+.particle:nth-child(2) { left: 20%; top: 60%; animation-delay: 2s; }
+.particle:nth-child(3) { left: 70%; top: 30%; animation-delay: 4s; }
+.particle:nth-child(4) { left: 80%; top: 70%; animation-delay: 6s; }
+.particle:nth-child(5) { left: 50%; top: 80%; animation-delay: 8s; }
+
+@keyframes particleFloat {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.3; }
+    50% { transform: translateY(-30px) scale(1.5); opacity: 0.6; }
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(79, 70, 229, 0.1);
+    border: 1px solid rgba(79, 70, 229, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--success);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 800;
     color: var(--heading);
     letter-spacing: -0.04em;
@@ -176,41 +232,107 @@ nav a:hover {
 }
 
 .hero-tagline {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     color: var(--text);
     margin-bottom: 1rem;
     font-weight: 500;
+    line-height: 1.5;
+}
+
+.hero-slogans {
+    margin-bottom: 2rem;
 }
 
 .hero-slogan,
 .hero-slogan-cn {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--primary);
-    margin-bottom: 2rem;
     letter-spacing: 0.02em;
 }
 
 html[lang="en"] .hero-slogan-cn { display: none; }
 html[lang="zh"] .hero-slogan { display: none; }
 
+.hero-cta-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
 .cta-button {
-    display: inline-block;
-    background: var(--primary);
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.875rem 2rem;
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     border-radius: 10px;
     transition: all 0.3s ease;
+}
+
+.cta-primary {
+    background: var(--primary);
+    color: white;
     box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
 }
 
-.cta-button:hover {
+.cta-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45);
+}
+
+.cta-secondary {
+    background: white;
+    color: var(--heading);
+    border: 1px solid var(--border);
+}
+
+.cta-secondary:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.hero-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.25rem 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hero-stats .stat-item {
+    text-align: center;
+}
+
+.hero-stats .stat-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.hero-stats .stat-label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hero-stats .stat-divider {
+    width: 1px;
+    height: 30px;
+    background: var(--border);
 }
 
 /* Sections */
@@ -348,6 +470,25 @@ section h2 {
     transform: translateY(-2px);
 }
 
+.advantage-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.advantage-item:hover .advantage-icon {
+    background: var(--accent-gradient);
+    color: white;
+    transform: scale(1.1);
+}
+
 .advantage-number {
     font-size: 2.5rem;
     font-weight: 800;
@@ -479,7 +620,20 @@ section h2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.quick-start-connector {
+    position: relative;
+    height: 20px;
     margin-bottom: 3rem;
+    display: none;
+}
+
+.quick-start-connector svg {
+    width: 100%;
+    height: 100%;
 }
 
 .quick-start-item {
@@ -495,6 +649,30 @@ section h2 {
 .quick-start-item:hover {
     box-shadow: var(--card-shadow);
     transform: translateY(-2px);
+}
+
+.quick-start-icon {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 48px;
+    background: white;
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.quick-start-item:hover .quick-start-icon {
+    background: var(--primary);
+    color: white;
+    transform: translateX(-50%) scale(1.1);
 }
 
 .step-number {

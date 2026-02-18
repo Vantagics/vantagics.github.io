@@ -1,6 +1,6 @@
 const translations = {
     "en": {
-        "title": "Vantagics - AI-Powered Enterprise Data Analysis Platform",
+        "title": "Vantagics (万策) - AI-Powered Enterprise Data Analysis Platform",
         "nav_marketplace": "Marketplace",
         "nav_features": "Core Features",
         "nav_advantage": "Product Advantage",
@@ -8,8 +8,10 @@ const translations = {
         "nav_quick_start": "Quick Start",
 
         "hero_title": "Vantagics",
-        "hero_subtitle": "AI-Powered Data Analysis Platform for Modern Businesses",
+        "hero_badge": "AI-Powered Data Analysis",
+        "hero_subtitle": "Transform Raw Data into Actionable Insights",
         "hero_cta": "Get Started",
+        "stat_users": "Active Users",
 
         "features_title": "Core Features",
         "features_subtitle": "Powerful AI-driven capabilities to transform your data workflow",
@@ -208,8 +210,10 @@ const translations = {
         "nav_quick_start": "快速开始",
 
         "hero_title": "万策",
-        "hero_subtitle": "AI 驱动的新一代数据分析平台",
+        "hero_badge": "AI 驱动的数据分析平台",
+        "hero_subtitle": "将原始数据转化为可操作的洞察",
         "hero_cta": "立即开始",
+        "stat_users": "活跃用户",
 
         "features_title": "核心功能",
         "features_subtitle": "强大的 AI 驱动能力，转变您的数据工作流程",
