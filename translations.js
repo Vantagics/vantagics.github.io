@@ -272,7 +272,7 @@ const translations = {
         "deployment_expert_2": "实时联网数据查询",
         "deployment_expert_3": "自定义分析流程",
         "deployment_expert_4": "发布快捷分析包到市场",
-        "deployment_expert_price": "¥399 起",
+        "deployment_expert_price": "¥99 起",
         "deployment_expert_cta": "立即升级",
         "deployment_enterprise_badge": "企业专属",
         "deployment_enterprise_title": "私有部署版",
