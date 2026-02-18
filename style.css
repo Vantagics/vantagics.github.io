@@ -645,18 +645,18 @@ section h2 {
 .comparison-option {
     flex: 1;
     text-align: center;
-    padding: 0.75rem;
-    border-radius: 8px;
+    padding: 1rem 0.75rem;
+    border-radius: 10px;
     background: #F8FAFC;
     transition: all 0.3s ease;
 }
 
 .comparison-option:first-child {
-    background: #FEF2F2;
+    background: #EEF2FF;
 }
 
 .comparison-option:last-child {
-    background: #ECFDF5;
+    background: #F0F9FF;
 }
 
 .comparison-label {
@@ -671,17 +671,18 @@ section h2 {
 
 .comparison-value {
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 700;
     margin-bottom: 0.375rem;
+    color: var(--primary);
 }
 
 .comparison-value-bad {
-    color: #DC2626;
+    color: var(--text-light);
 }
 
 .comparison-value-good {
-    color: #059669;
+    color: var(--primary);
 }
 
 .comparison-text {
