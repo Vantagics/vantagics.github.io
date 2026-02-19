@@ -631,7 +631,7 @@
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .quick-start-item::before {
