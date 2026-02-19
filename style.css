@@ -1504,6 +1504,8 @@ html[lang="zh"] .footer-logo .logo-cn { color: white; margin-left: 0; }
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow: visible;
+    min-height: 480px;
 }
 
 .deployment-card:hover {
@@ -1524,6 +1526,8 @@ html[lang="zh"] .footer-logo .logo-cn { color: white; margin-left: 0; }
     border-color: rgba(79, 70, 229, 0.3);
     transform: scale(1.05);
     z-index: 1;
+    overflow: visible;
+    min-height: 520px;
 }
 
 .deployment-card-expert:hover {
