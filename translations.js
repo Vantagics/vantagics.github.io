@@ -299,11 +299,11 @@ const translations = {
         "feature_5_title": "专业报告导出",
         "feature_5_desc": "以 PDF、Word、Excel 和 PowerPoint 格式导出分析结果，精美排版。",
 
-        "feature_6_title": "分析包市场",
+        "feature_6_title": "分析技能包市场",
         "feature_6_desc": "专家可将洞察变现，新手可一键获得专业分析。",
 
         "marketplace_badge": "专业市场平台",
-        "marketplace_title": "分析包市场",
+        "marketplace_title": "分析技能包市场",
         "marketplace_slogan": "行业智慧，一键共享",
         "expert_title": "行业专家",
         "expert_desc": "使用LLM驱动的智能分析平台，生成个性化分析结果",
@@ -322,7 +322,7 @@ const translations = {
         "novice_benefit_label": "收获",
         "novice_benefit": "专业知识瞬间掌握",
         "vs_text": "对",
-        "stat_1": "精品分析包",
+        "stat_1": "精品分析技能包",
         "stat_2": "行业领域",
         "stat_3": "活跃用户",
         "marketplace_cta": "加入专业市场",
