@@ -236,7 +236,7 @@ const translations = {
     },
     "zh": {
         "title": "万策 - AI 驱动的企业级数据分析平台",
-        "nav_marketplace": "分析市场",
+        "nav_marketplace": "分析技能包市场",
         "nav_deployment": "部署方式",
         "nav_features": "核心功能",
         "nav_advantage": "产品优势",
